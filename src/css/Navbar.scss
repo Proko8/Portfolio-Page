@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar__name {
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__buttons {
+    padding-left: 50px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: black;
+}
