@@ -1,17 +1,35 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../css/Navbar.scss';
+import '../styles/Navbar.scss';
+import * as FaIcons from 'react-icons/fa';
+import * as BsIcons from 'react-icons/bs';
+import * as FiIcons from 'react-icons/fi';
 
 const Navbar = () => {
     return (
         <nav>
             <div className="navbar">
-                <Link to="/" className="navbar__name">Paul Prokopy's Portfolio</Link>
-                <div className="navbar__buttons">
-                    <Link to="/whatido" className="navbar__buttons">What I Do</Link>
-                    <Link to="/about" className="navbar__buttons">About Me</Link>
-                    <Link to="/portfolio" className="navbar__buttons">Portfolio</Link>
-                    <Link to="/contact" className="navbar__buttons">Contact</Link>
+                <div className="navbar__right">
+                    <img src="https://i.imgur.com/JSc0fT4.png" className="navbar__browns" aria-label="Cleveland Browns Logo"></img>
+                    <Link to="/" className="navbar__name">Paul Prokopy's Portfolio</Link>
+                </div>
+                <div className="navbar__right">
+                    <div className="navbar__tabs">
+                        <FaIcons.FaKeyboard className="navbar__icons" />
+                        <Link to="/whatido" className="navbar__buttons">What I Do</Link>
+                    </div>
+                    <div className="navbar__tabs">
+                        <BsIcons.BsFillPersonLinesFill className="navbar__icons"/>
+                        <Link to="/about" className="navbar__buttons">About Me</Link>
+                    </div>
+                    <div className="navbar__tabs">
+                        <FaIcons.FaLaptopCode className="navbar__icons"/>
+                        <Link to="/portfolio" className="navbar__buttons">Portfolio</Link>
+                    </div>
+                    <div className="navbar__tabs">
+                        <FiIcons.FiPhoneCall className="navbar__icons"/>
+                        <Link to="/contact" className="navbar__buttons">Contact</Link>
+                    </div>
                 </div>
         </div>
       </nav>

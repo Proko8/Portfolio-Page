@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+.contact{
+
+}
+
+.contact__links {
+    text-decoration: none;
+    color: $color-brown;
+    margin-left: 5px;
+    position: relative;
+    top:-17px;
+    font-size: x-large;
+}
+
+.contact__icons {
+ size: 25px;
+}
+
+.contact__flexContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}

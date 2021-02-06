@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    background-color: $color-brown;
+    padding: 25px;
+}
+
+.navbar__name {
+    text-decoration: none;
+    color: $color-orange;
+}
+
+.navbar__links {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar__buttons {
+    padding-left: 50px;
+    text-decoration: none;
+    color: $color-orange;
+    font-size: large;
+    &:focus {
+        color: $color-brown;
+        background-color: $color-orange;
+        padding: 20px;
+    }
+    &:hover {
+        color: $color-brown;
+        background-color: $color-orange;
+        padding: 20px;
+    }
+}
+
+.navbar__right {
+    display: flex;
+    flex-direction: row;
+    color: $color-orange;
+}
+
+.navbar__icons {
+   margin-left: 50px;
+   margin-right: -40px;
+   padding-top: 4px;
+}
+
+.navbar__browns {
+max-width: 25px;
+margin-right: 7px;
+}
