@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.portfolio {
+
+}
+
+.portfolio__flexContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+
+.portfolio__amazon {
+    max-width: 700px;
+}
+
+.portfolio__facebook {
+    max-width: 700px;
+}
+
+.portfolio__name {
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-orange;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: xx-large;
+    color: $color-brown;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+}

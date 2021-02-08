@@ -1,7 +1,6 @@
-@import './variables.scss';
+@import "./variables.scss";
 
-.contact{
-
+.contact {
 }
 
 .contact__links {
@@ -9,12 +8,13 @@
     color: $color-brown;
     margin-left: 5px;
     position: relative;
-    top:-17px;
+    top: -17px;
     font-size: x-large;
+    font-weight: 600;
 }
 
 .contact__icons {
- size: 25px;
+    size: 25px;
 }
 
 .contact__flexContainer {
@@ -26,4 +26,8 @@
 .contact__gridContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+    background-color: $color-orange;
+    border: 2px solid $color-brown;
+    border-radius: 5px;
 }

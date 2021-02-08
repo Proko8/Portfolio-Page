@@ -3,7 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as SiIcons from 'react-icons/si';
 import * as ImIcons from 'react-icons/im';
 import * as AiIcons from 'react-icons/ai';
-import '../styles/WhatIDo.scss'
+import '../styles/_whatIDo.scss'
 
 const WhatIDo = () => {
     return (
@@ -11,35 +11,31 @@ const WhatIDo = () => {
             <div className="headers">What I Do</div>
             <div className="whatido__flexContainer">
                 <div className="whatido__gridContainer">
+                    <div className="whatido__frontend">Frontend Languages and Technologies</div>
                     <div className="whatido__icons">
                         <SiIcons.SiJavascript size={150} className="whatido__icon"/>
-                        <h4>Javascript Development</h4>
-                        <p></p>
+                        <p className="whatido__titles">Javascript Development</p>
                     </div>
                     <div className="whatido__icons">
                         <FaIcons.FaReact size={150} className="whatido__icon"/>
-                        <h4>React.JS Development</h4>
-                        <p></p>
-                    </div>
-                    <div className="whatido__icons">
-                        <FaIcons.FaPython size={150} className="whatido__icon"/>
-                        <h4>Python Development</h4>
-                        <p></p>
-                    </div>
-                    <div className="whatido__icons">
-                        <FaIcons.FaNode size={150} className="whatido__icon"/>
-                        <h4>Node.JS Development</h4>
-                        <p></p>
-                    </div>
-                    <div className="whatido__icons">
-                        <AiIcons.AiOutlineConsoleSql size={150} className="whatido__icon"/>
-                        <h4>SQL Development</h4>
-                        <p></p>
+                        <p className="whatido__titles">React.JS Development</p>
                     </div>
                     <div className="whatido__icons">
                         <ImIcons.ImAccessibility size={150} className="whatido__icon"/>
-                        <h4>Accessibility  Development</h4>
-                        <p></p>
+                        <p className="whatido__titles">Accessibility  Development</p>
+                    </div>
+                    <div className="whatido__frontend">Backend Languages and Technologies</div>
+                    <div className="whatido__icons">
+                        <FaIcons.FaNode size={150} className="whatido__icon"/>
+                        <p className="whatido__titles">Node.JS Development</p>
+                    </div>
+                    <div className="whatido__icons">
+                        <FaIcons.FaPython size={150} className="whatido__icon"/>
+                        <p className="whatido__titles">Python Development</p>
+                    </div>
+                    <div className="whatido__icons">
+                        <AiIcons.AiOutlineConsoleSql size={150} className="whatido__icon"/>
+                        <p className="whatido__titles">SQL Development</p>
                     </div>
                 </div>
             </div>

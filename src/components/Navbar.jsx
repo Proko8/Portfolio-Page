@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../styles/Navbar.scss';
+import '../styles/_navbar.scss';
 import * as FaIcons from 'react-icons/fa';
 import * as BsIcons from 'react-icons/bs';
 import * as FiIcons from 'react-icons/fi';

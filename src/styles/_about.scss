@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.about {
+
+}
+
+.about__flexContainer {
+    display: flex;
+    justify-content: center;
+    background-color: $color-orange;
+    border: 2px solid $color-brown;
+    border-radius: 5px;
+    width: 750px;
+    margin: auto;
+}
+
+.about__text {
+    width: 700px;
+}

@@ -1,0 +1,63 @@
+@import "./variables.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    background-color: $color-brown;
+    padding: 25px;
+}
+
+.navbar__name {
+    text-decoration: none;
+    color: $color-orange;
+}
+
+.navbar__buttons {
+    text-decoration: none;
+    position: relative;
+    left: 15px;
+    margin-right: 25px;
+    color: $color-orange;
+}
+
+.navbar__tabs {
+    text-decoration: none;
+    color: $color-orange;
+    .navbar__buttons {
+        &:focus {
+            color: $color-brown;
+            background-color: $color-orange;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-radius: 5px;
+        }
+        &:hover {
+            color: $color-brown;
+            background-color: $color-orange;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.navbar__icons {
+    position: relative;
+    left: 10px;
+    top: 2px;
+}
+
+.navbar__right {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    right:-100px;
+}
+
+.navbar__browns {
+    max-width: 25px;
+    position: relative;
+    right: 10px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Contact.scss'
-import '../styles/headers.scss'
+import '../styles/_contact.scss'
+import '../styles/_headers.scss'
 import * as AiIcons from 'react-icons/ai';
 
 const Contact = () => {
@@ -16,13 +16,13 @@ const Contact = () => {
                         </a>
                     </div>
                     <div>
-                        <AiIcons.AiFillGithub  size={50} className="contact__icons"/>
+                        <AiIcons.AiFillGithub size={50} className="contact__icons"/>
                         <a href="https://www.github.com/proko8" className="contact__links hoverline" aria-label="Paul's Github Profile">
                             Github - https://www.github.com/proko8
                         </a>
                     </div>    
                     <div>
-                        <AiIcons.AiOutlineMail  size={50} className="contact__icons"/>
+                        <AiIcons.AiOutlineMail size={50} className="contact__icons"/>
                         < a href="mailto:pprokopy@gmail.com" className="contact__links hoverline" aria-label="Email Paul">Email - Pprokopy@gmail.com</a>
                     </div>
                 </div>
