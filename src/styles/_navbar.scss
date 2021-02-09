@@ -61,3 +61,59 @@
     position: relative;
     right: 10px;
 }
+
+@media (max-width: 3840px) {
+    p {
+        font-size: 2.5rem;
+    }
+    .navbar__buttons {
+        font-size: 2rem;
+    }
+    .navbar__icons {
+        font-size: 30px;
+    }
+    .navbar__name {
+        font-size: 2rem;
+    }
+    .navbar__browns {
+        max-width: 50px;
+    }
+}
+
+@media (max-width: 2560px) {
+    p {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar__buttons {
+        font-size: .85rem;
+    }
+    .navbar{
+        max-width: 375px;
+        display: flex;
+        justify-content: start;
+    }
+    .navbar__right{
+        position: relative;
+        left:0px
+    }
+    .navbar__browns {
+        max-width: 25px;
+        max-height: 25px;
+        position: relative;
+        bottom: -17px;
+    }
+    .navbar__tabs {
+        margin-left: 4px;
+    }
+    .navbar__icons {
+        position: relative;
+        right:-5px;
+    }
+    .navbar__tabs__contact {
+        position: relative;
+        left: -10px;
+    }
+}

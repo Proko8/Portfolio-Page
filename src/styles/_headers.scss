@@ -7,9 +7,30 @@
     margin-top: -30px;
     margin-bottom: 30px;
     padding: 10px;
-    font-size: xx-large;
+    font-size: 2rem;
     color: $color-brown;
     border:2px solid $color-brown;
     border-radius: 5px;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
+}
+
+@media (max-width: 3840px) {
+    .headers { 
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding: 30px;
+        font-size: 5rem;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 375px) {
+    .headers {
+        font-size: 1.25rem;
+        margin-top: -30px;
+        margin-bottom: 5px;
+        padding: 5px;
+        max-width: 100px;
+    }
 }

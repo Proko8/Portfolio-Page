@@ -1,8 +1,5 @@
 @import "./variables.scss";
 
-.about {
-
-}
 
 .about__flexContainer {
     display: flex;
@@ -10,10 +7,34 @@
     background-color: $color-orange;
     border: 2px solid $color-brown;
     border-radius: 5px;
-    width: 750px;
+    width: 100%;
+    max-width: 750px;
     margin: auto;
 }
 
 .about__text {
-    width: 700px;
+    text-align: start;
+    width: 100%;
+    max-width: 700px;
+    font-size: larger;  
+}
+
+@media (max-width: 3840px) {
+    .about__flexContainer {
+        max-width: 1500px;
+    }
+    .about__text {
+        width: 100%;
+        max-width: 1400px;
+        font-size: 2.25rem;  
+    }
+}
+
+@media (max-width: 375px) {
+    .about__flexContainer {
+        max-width: 350px;
+    }
+    .about__text {
+        max-width: 340px;
+    }
 }

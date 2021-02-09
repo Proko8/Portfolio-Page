@@ -11,30 +11,30 @@ const WhatIDo = () => {
             <div className="headers">What I Do</div>
             <div className="whatido__flexContainer">
                 <div className="whatido__gridContainer">
-                    <div className="whatido__frontend">Frontend Languages and Technologies</div>
+                    {/* <div className="whatido__frontend">Frontend Languages and Technologies</div> */}
                     <div className="whatido__icons">
-                        <SiIcons.SiJavascript size={150} className="whatido__icon"/>
+                        <SiIcons.SiJavascript className="whatido__icon"/>
                         <p className="whatido__titles">Javascript Development</p>
                     </div>
                     <div className="whatido__icons">
-                        <FaIcons.FaReact size={150} className="whatido__icon"/>
+                        <FaIcons.FaReact className="whatido__icon"/>
                         <p className="whatido__titles">React.JS Development</p>
                     </div>
                     <div className="whatido__icons">
-                        <ImIcons.ImAccessibility size={150} className="whatido__icon"/>
+                        <ImIcons.ImAccessibility className="whatido__icon"/>
                         <p className="whatido__titles">Accessibility  Development</p>
                     </div>
-                    <div className="whatido__frontend">Backend Languages and Technologies</div>
+                    {/* <div className="whatido__frontend">Backend Languages and Technologies</div> */}
                     <div className="whatido__icons">
-                        <FaIcons.FaNode size={150} className="whatido__icon"/>
+                        <FaIcons.FaNode className="whatido__icon"/>
                         <p className="whatido__titles">Node.JS Development</p>
                     </div>
                     <div className="whatido__icons">
-                        <FaIcons.FaPython size={150} className="whatido__icon"/>
+                        <FaIcons.FaPython className="whatido__icon"/>
                         <p className="whatido__titles">Python Development</p>
                     </div>
                     <div className="whatido__icons">
-                        <AiIcons.AiOutlineConsoleSql size={150} className="whatido__icon"/>
+                        <AiIcons.AiOutlineConsoleSql className="whatido__icon"/>
                         <p className="whatido__titles">SQL Development</p>
                     </div>
                 </div>

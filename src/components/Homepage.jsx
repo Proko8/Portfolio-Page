@@ -5,7 +5,12 @@ const Homepage = () => {
     return (
         <div className="homepage">
             <div className="headers">Home</div>
-            I want to make things that can make a difference for everyone.
+            <div className="homepage__flexContainer">
+                <div className="homepage__gridContainer">
+                    <p>I want to make things that can make a difference for everyone.</p>
+                    <img src="https://i.imgur.com/OSfwak9.jpg" className="homepage__picture"></img>
+                </div>
+            </div>
         </div>
     );
 };

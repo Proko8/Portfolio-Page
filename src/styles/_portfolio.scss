@@ -1,9 +1,5 @@
 @import './variables.scss';
 
-.portfolio {
-
-}
-
 .portfolio__flexContainer {
     display: flex;
     justify-content: center;
@@ -15,10 +11,12 @@
 }
 
 .portfolio__amazon {
+    width: 100%;
     max-width: 700px;
 }
 
 .portfolio__facebook {
+    width: 100%;
     max-width: 700px;
 }
 
@@ -30,8 +28,66 @@
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 10px;
-    font-size: xx-large;
+    font-size: 2rem;
     color: $color-brown;
     border:2px solid $color-brown;
     border-radius: 5px;
+}
+
+@media (max-width: 3840px) {
+    .portfolio__name {
+        font-size: 3rem;
+    }
+    .portfolio__amazon {
+        width: 100%;
+        max-width: 1400px;
+    }
+    
+    .portfolio__facebook {
+        width: 100%;
+        max-width: 1400px;
+    }
+}
+
+@media (max-height: 1440px) {
+    .portfolio__amazon {
+        width: 100%;
+        max-width: 1000px;
+    }
+    
+    .portfolio__facebook {
+        width: 100%;
+        max-width: 1000px;
+    }
+}
+@media (max-height: 1600px) {
+    .portfolio__flexContainer {
+        margin-top: -30px;
+    }
+
+    .portfolio__amazon {
+        width: 100%;
+        max-width: 700px;
+    }
+    
+    .portfolio__facebook {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 375px) {
+    .portfolio__gridContainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  
+    }
+    .portfolio__name {
+        padding: 5px;
+    }
+    .portfolio__amazon {
+        max-width: 350px;
+    }
+    .portfolio__facebook {
+        max-width: 350px;
+    }
 }

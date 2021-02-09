@@ -26,7 +26,7 @@ const Navbar = () => {
                         <FaIcons.FaLaptopCode className="navbar__icons"/>
                         <Link to="/portfolio" className="navbar__buttons">Portfolio</Link>
                     </div>
-                    <div className="navbar__tabs">
+                    <div className="navbar__tabs navbar__tabs__contact">
                         <FiIcons.FiPhoneCall className="navbar__icons"/>
                         <Link to="/contact" className="navbar__buttons">Contact</Link>
                     </div>

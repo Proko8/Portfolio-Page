@@ -1,5 +1,70 @@
 @import './variables.scss';
 
-.homepage{
+
+.homepage__picture {
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (max-width: 3840px) {
+    p {
+        font-size: 2.5rem;
+    }
+    .homepage__picture {
+        // width: 100%;
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 2560px) {
+    p {
+        font-size: 2rem;
+    }
+    .homepage__picture {
+        // width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media (max-height: 1440px) {
+    .homepage__flexContainer {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .homepage__picture {
+        max-width: 550px;
+    }
+}
+@media (max-height: 1600px) {
+    .homepage__flexContainer {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .homepage__picture {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .homepage__flexContainer {
+        display: flex;
+        justify-content: center;
+    }
     
+    p {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+    .homepage__picture {
+        max-width: 250px;
+    }
+
 }
