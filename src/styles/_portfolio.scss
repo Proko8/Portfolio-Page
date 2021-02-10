@@ -49,30 +49,17 @@
     }
 }
 
-@media (max-height: 1440px) {
+@media (max-width: 2560px) {
+    .portfolio__name {
+        font-size: 1.75rem;
+    }
     .portfolio__amazon {
         width: 100%;
-        max-width: 1000px;
+        max-width: 900px;
     }
-    
     .portfolio__facebook {
         width: 100%;
-        max-width: 1000px;
-    }
-}
-@media (max-height: 1600px) {
-    .portfolio__flexContainer {
-        margin-top: -30px;
-    }
-
-    .portfolio__amazon {
-        width: 100%;
-        max-width: 700px;
-    }
-    
-    .portfolio__facebook {
-        width: 100%;
-        max-width: 700px;
+        max-width: 900px;
     }
 }
 

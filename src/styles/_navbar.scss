@@ -86,6 +86,21 @@
     }
 }
 
+@media (max-height: 1600px) {
+    .navbar__buttons {
+        font-size: 1.25rem;
+    }
+    .navbar__icons {
+        font-size: 25px;
+    }
+    .navbar__name {
+        font-size: 1.25rem;
+    }
+    .navbar__browns {
+        max-width: 30px;
+    }
+}
+
 @media (max-width: 375px) {
     .navbar__buttons {
         font-size: .85rem;

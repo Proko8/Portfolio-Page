@@ -48,6 +48,16 @@
     }
 }
 
+@media (max-width: 2560px) {
+    .contact__gridContainer {
+        padding: 50px;
+        max-width: 900px;
+    }
+    .contact__icons {
+        font-size: 50px;
+    }
+}
+
 @media (max-width: 375px) {
     .contact__gridContainer {
         padding: 10px;

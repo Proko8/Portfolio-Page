@@ -30,6 +30,18 @@
     }
 }
 
+@media (max-width: 2560px) {
+    .about__flexContainer {
+        max-width: 1200px;
+        margin-top: 40px;
+    }
+    .about__text {
+        width: 100%;
+        max-width: 1400px;
+        font-size: 1.5rem;  
+    }
+}
+
 @media (max-width: 375px) {
     .about__flexContainer {
         max-width: 350px;
