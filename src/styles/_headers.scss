@@ -35,9 +35,9 @@
     }
 }
 
-@media (max-width: 375px) {
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4){
     .headers {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-top: -30px;
         margin-bottom: 5px;
         padding: 5px;

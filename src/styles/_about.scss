@@ -10,13 +10,19 @@
     width: 100%;
     max-width: 750px;
     margin: auto;
+    padding: 10px;
+}
+
+.about__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
 }
 
 .about__text {
     text-align: start;
     width: 100%;
     max-width: 700px;
-    font-size: larger;  
+    font-size: 1.5rem; 
 }
 
 @media (max-width: 3840px) {

@@ -1,80 +1,96 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .portfolio__flexContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio__gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .portfolio__amazon {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .portfolio__facebook {
-    width: 100%;
-    max-width: 700px;
+  width: 100%;
+  max-width: 700px;
 }
 
 .portfolio__name {
-    text-align: center;
-    text-decoration: none;
-    background-color: $color-orange;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size: 2rem;
-    color: $color-brown;
-    border:2px solid $color-brown;
-    border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  background-color: $color-orange;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 2rem;
+  color: $color-brown;
+  border: 2px solid $color-brown;
+  border-radius: 5px;
 }
 
 @media (max-width: 3840px) {
-    .portfolio__name {
-        font-size: 3rem;
-    }
-    .portfolio__amazon {
-        width: 100%;
-        max-width: 1400px;
-    }
-    
-    .portfolio__facebook {
-        width: 100%;
-        max-width: 1400px;
-    }
+  .portfolio__name {
+    font-size: 3rem;
+  }
+  .portfolio__amazon {
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  .portfolio__facebook {
+    width: 100%;
+    max-width: 1400px;
+  }
 }
 
 @media (max-width: 2560px) {
-    .portfolio__name {
-        font-size: 1.75rem;
-    }
-    .portfolio__amazon {
-        width: 100%;
-        max-width: 900px;
-    }
-    .portfolio__facebook {
-        width: 100%;
-        max-width: 900px;
-    }
+  .portfolio__name {
+    font-size: 1.75rem;
+  }
+  .portfolio__amazon {
+    width: 100%;
+    max-width: 900px;
+  }
+  .portfolio__facebook {
+    width: 100%;
+    max-width: 900px;
+  }
 }
 
 @media (max-width: 375px) {
+  .portfolio__gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio__name {
+    padding: 5px;
+  }
+  .portfolio__amazon {
+    max-width: 350px;
+  }
+  .portfolio__facebook {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4) {
     .portfolio__gridContainer {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);  
-    }
-    .portfolio__name {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .portfolio__name {
         padding: 5px;
-    }
-    .portfolio__amazon {
+      }
+      .portfolio__amazon {
         max-width: 350px;
-    }
-    .portfolio__facebook {
+      }
+      .portfolio__facebook {
         max-width: 350px;
-    }
+      }
 }

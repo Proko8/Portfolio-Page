@@ -27,12 +27,17 @@
 }
 
 @media (max-width: 3840px) {
+    .whatido__gridContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1800px;
+        max-height: 1800px;
+    }
     .whatido__icon {
-        color: $color-brown;
-        font-size: 250px;
+        font-size: 125px;
     }
     .whatido__titles {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -43,7 +48,7 @@
         grid-template-columns: repeat(3, 1fr);
         max-width: 1200px;
         max-height: 1000px;
-        padding: 20px;
+        padding: 5px;
     }
     .whatido__icons {
         margin: 5px;
@@ -52,11 +57,10 @@
         margin-top: 30px;
     }
     .whatido__icon {
-        color: $color-brown;
-        font-size: 150px;
+        font-size: 75px;
     }
     .whatido__titles {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 }
 

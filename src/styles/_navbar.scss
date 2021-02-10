@@ -80,13 +80,8 @@
     }
 }
 
-@media (max-width: 2560px) {
-    p {
-        font-size: 2rem;
-    }
-}
 
-@media (max-height: 1600px) {
+@media (max-width: 2560px) {
     .navbar__buttons {
         font-size: 1.25rem;
     }
