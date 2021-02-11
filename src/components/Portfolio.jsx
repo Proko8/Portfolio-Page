@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/_portfolio.scss'
 
-const Portfolio = () => {
+function Portfolio() {
   return (
     <div className="portfolio">
         <div className="headers">Portfolio</div>

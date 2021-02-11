@@ -8,7 +8,7 @@ import Portfolio from './components/Portfolio.jsx';
 import WhatIDo from './components/WhatIDo.jsx';
 
 
-const App = () => {
+function App() {
   return (
     <div className="App">
        <Router>

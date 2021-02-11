@@ -5,7 +5,7 @@ import * as ImIcons from 'react-icons/im';
 import * as AiIcons from 'react-icons/ai';
 import '../styles/_whatIDo.scss'
 
-const WhatIDo = () => {
+function WhatIDo() {
     return (
         <div className="whatido">
             <div className="headers">What I Do</div>

@@ -5,7 +5,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as BsIcons from 'react-icons/bs';
 import * as FiIcons from 'react-icons/fi';
 
-const Navbar = () => {
+function Navbar() {
     return (
         <nav>
             <div className="navbar">

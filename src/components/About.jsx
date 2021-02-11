@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/_about.scss";
 
-const About = () => {
+function About() {
   return (
     <div className="about">
       <div className="headers">About</div>

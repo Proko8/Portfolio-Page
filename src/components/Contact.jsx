@@ -3,7 +3,7 @@ import '../styles/_contact.scss'
 import '../styles/_headers.scss'
 import * as AiIcons from 'react-icons/ai';
 
-const Contact = () => {
+function Contact() {
     return (
         <div className="contact">
             <div className="headers">Contact</div>

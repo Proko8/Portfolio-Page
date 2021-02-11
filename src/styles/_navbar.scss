@@ -96,34 +96,41 @@
     }
 }
 
-@media (max-width: 375px) {
-    .navbar__buttons {
-        font-size: .85rem;
-    }
-    .navbar{
-        max-width: 375px;
-        display: flex;
-        justify-content: start;
-    }
-    .navbar__right{
-        position: relative;
-        left:0px
-    }
-    .navbar__browns {
-        max-width: 25px;
-        max-height: 25px;
-        position: relative;
-        bottom: -17px;
-    }
-    .navbar__tabs {
-        margin-left: 4px;
-    }
-    .navbar__icons {
-        position: relative;
-        right:-5px;
-    }
-    .navbar__tabs__contact {
-        position: relative;
-        left: -10px;
-    }
+// @media (max-width: 375px) {
+//     .navbar__buttons {
+//         font-size: .85rem;
+//     }
+//     .navbar{
+//         max-width: 375px;
+//         display: flex;
+//         justify-content: start;
+//     }
+//     .navbar__right{
+//         position: relative;
+//         left:0px
+//     }
+//     .navbar__browns {
+//         max-width: 25px;
+//         max-height: 25px;
+//         position: relative;
+//         bottom: -17px;
+//     }
+//     .navbar__tabs {
+//         margin-left: 4px;
+//     }
+//     .navbar__icons {
+//         position: relative;
+//         right:-5px;
+//     }
+//     .navbar__tabs__contact {
+//         position: relative;
+//         left: -10px;
+//     }
+// }
+
+@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4){
+    
+}
+@media only screen and (min-device-height: 760px) and (min-device-width: 360px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4){
+    
 }
