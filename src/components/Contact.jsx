@@ -39,6 +39,10 @@ function Contact() {
             Email - Pprokopy@gmail.com
           </a>
         </div>
+        <div>
+          <AiIcons.AiOutlinePhone className="contact__icons" />
+          <a className="contact__links" aria-label="Paul's Phone Number">(321) 987-1290</a>
+        </div>
       </div>
     </div>
   );
