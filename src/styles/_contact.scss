@@ -1,81 +1,59 @@
 @import "./variables.scss";
+.contact {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
 
-.contact__links {
+.contact__header {
+    background-color: $color-orange;
+    padding: 3px;
+    font-size: 2rem;
+    color: $color-brown;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 175px;
+    margin-bottom: 10px;
+}
+
+.contact__grid-item-1 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.contact__grid-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.contact__container{
+    display: grid;
+    align-items: center;
+    background-color: $color-orange;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact__icons {
+     color: $color-brown;
+     font-size: 2rem;
+     position: relative;
+     bottom: -5px;
+}
+
+.contact__links{
     text-decoration: none;
     color: $color-brown;
     margin-left: 5px;
     position: relative;
-    top: -17px;
-    font-size: x-large;
+    font-size: 1.5rem;
     font-weight: 600;
-}
-
-.contact__icons {
-    font-size: 50px;
-}
-
-.contact__flexContainer {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.contact__gridContainer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 100px;
-    background-color: $color-orange;
-    border: 2px solid $color-brown;
-    border-radius: 5px;
-}
-
-@media (max-width: 3840px) {
-    .contact__gridContainer {
-        padding: 100px;
-        max-width: 1200px;
-    }
-    .contact__icons {
-        font-size: 50px;
-    }
-    .contact__links {
-        text-decoration: none;
-        color: $color-brown;
-        margin-left: 5px;
-        position: relative;
-        top: -17px;
-        font-size: 2.25rem;
-        font-weight: 600;
-    }
-}
-
-@media (max-width: 2560px) {
-    .contact__gridContainer {
-        padding: 50px;
-        max-width: 900px;
-    }
-    .contact__icons {
-        font-size: 50px;
-    }
-}
-
-@media (max-width: 375px) {
-    .contact__gridContainer {
-        padding: 10px;
-        max-width: 345px;
-    }
-    .contact__flexContainer {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .contact__icons {
-        font-size: 20px;
-    }
-    .contact__links {
-        margin-left: 5px;
-        position: relative;
-        top: -3px;
-        font-size: 1rem;
-        font-weight: 600;
-    }
 }

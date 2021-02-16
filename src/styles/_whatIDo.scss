@@ -1,8 +1,22 @@
 @import './variables.scss';
 
-.whatido__flexContainer {
-    display: flex;
-    justify-content: center;
+
+.whatido {
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    justify-items: center;
+}
+
+.whatido__headers {
+    background-color: $color-orange;
+    padding-top: 3px;
+    font-size: 2rem;
+    color: $color-brown;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 175px;
+    margin-bottom: 10px;
 }
 
 .whatido__gridContainer {
@@ -11,71 +25,57 @@
     background-color: $color-orange;
     border: 2px solid $color-brown;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .whatido__icons {
-    margin: 100px;
+    margin: 0px;
 }
 
 .whatido__icon {
     color: $color-brown;
-    font-size: 150px;
+    font-size: 75px;
 }
 
 .whatido__titles {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 3840px) {
-    .whatido__gridContainer {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-width: 1800px;
-        max-height: 1800px;
-    }
-    .whatido__icon {
-        font-size: 125px;
-    }
-    .whatido__titles {
-        font-size: 2rem;
-    }
-}
-
-
-@media (max-width: 2560px) {
-    .whatido__gridContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1200px;
-        max-height: 1000px;
-        padding: 5px;
-    }
-    .whatido__icons {
-        margin: 5px;
-    }
-    .whatido__flexContainer {
-        margin-top: 30px;
-    }
-    .whatido__icon {
-        font-size: 75px;
-    }
-    .whatido__titles {
-        font-size: 1.25rem;
-    }
-}
-
-@media (max-width: 375px) {
+@media only screen and (min-width: 320px) and (orientation: portrait) {
     .whatido__gridContainer {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        max-width: 300px;
-        max-height: 100%;
+        background-color: $color-orange;
+        border: 2px solid $color-brown;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: -100px;
     }
-    .whatido__icons {
-        font-size: 100px;
-        margin:10px;
-    }
-    .whatido__titles {
-        font-size: 1.25rem;
+    .whatido__headers {
+        background-color: $color-orange;
+        padding-top: 3px;
+        font-size: 2rem;
+        color: $color-brown;
+        border:2px solid $color-brown;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 175px;
+        max-height: 50px;
     }
 }
+
+// @media (max-width: 375px) {
+//     .whatido__gridContainer {
+//         display: grid;
+//         grid-template-columns: repeat(1, 1fr);
+//         max-width: 300px;
+//         max-height: 100%;
+//     }
+//     .whatido__icons {
+//         font-size: 100px;
+//         margin:10px;
+//     }
+//     .whatido__titles {
+//         font-size: 1.25rem;
+//     }
+// }

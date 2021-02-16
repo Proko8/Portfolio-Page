@@ -4,14 +4,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 50px;
     background-color: $color-brown;
-    padding: 25px;
+    padding: 10px;
+    margin-bottom: 3px;
 }
 
 .navbar__name {
     text-decoration: none;
     color: $color-orange;
+    position: relative;
+    bottom: 4px;
 }
 
 .navbar__buttons {
@@ -29,15 +31,13 @@
         &:focus {
             color: $color-brown;
             background-color: $color-orange;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding: 3px 10px;
             border-radius: 5px;
         }
         &:hover {
             color: $color-brown;
             background-color: $color-orange;
-            padding-top: 3px;
-            padding-bottom: 3px;
+            padding: 3px 10px;
             border-radius: 5px;
         }
     }
@@ -45,7 +45,7 @@
 
 .navbar__icons {
     position: relative;
-    left: 10px;
+    left: -5px;
     top: 2px;
 }
 
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    right:-100px;
+    right:-200px;
 }
 
 .navbar__browns {
@@ -62,68 +62,68 @@
     right: 10px;
 }
 
-@media (max-width: 3840px) {
-    p {
-        font-size: 2.5rem;
-    }
-    .navbar__buttons {
-        font-size: 2rem;
-    }
-    .navbar__icons {
-        font-size: 30px;
-    }
-    .navbar__name {
-        font-size: 2rem;
+@media only screen and (min-width: 576px) and (orientation: landscape) {
+    .navbar__right {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: 50px;
     }
     .navbar__browns {
-        max-width: 50px;
+        position: relative;
+        right: 53px;
+    }
+    .navbar__name {
+        position: relative;
+        right: 50px;
     }
 }
 
-
-@media (max-width: 2560px) {
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+    .navbar {
+        width: 100%;
+    }
+    .navbar__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        left:-15px;
+    }
+    .navbar__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .navbar__name {
+        font-size: .75rem;
+    }
     .navbar__buttons {
-        font-size: 1.25rem;
+        font-size: 0px;
+    }
+    .navbar__tabs {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+    .navbar__browns {
+        margin-left: 15px;
     }
     .navbar__icons {
         font-size: 25px;
-    }
-    .navbar__name {
-        font-size: 1.25rem;
-    }
-    .navbar__browns {
-        max-width: 30px;
-    }
-}
-
-@media (max-width: 375px) {
-    .navbar__buttons {
-        font-size: .85rem;
-    }
-    .navbar{
-        max-width: 375px;
-        display: flex;
-        justify-content: start;
-    }
-    .navbar__right{
-        position: relative;
-        left:0px
-    }
-    .navbar__browns {
-        max-width: 25px;
-        max-height: 25px;
-        position: relative;
-        bottom: -17px;
-    }
-    .navbar__tabs {
-        margin-left: 4px;
-    }
-    .navbar__icons {
-        position: relative;
-        right:-5px;
-    }
-    .navbar__tabs__contact {
-        position: relative;
-        left: -10px;
+            &:focus {
+                color: $color-brown;
+                background-color: $color-orange;
+                padding: 3px 10px;
+                border-radius: 5px;
+                font-size: initial;
+            }
+            &:hover {
+                color: $color-brown;
+                background-color: $color-orange;
+                padding: 3px 10px;
+                border-radius: 5px;
+                font-size: initial;
+        }
     }
 }

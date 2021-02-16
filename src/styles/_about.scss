@@ -1,58 +1,48 @@
 @import "./variables.scss";
 
+.about {
+    display: grid;
+    grid-template-rows: .1fr 1fr;
+    justify-items: center;
+}
 
-.about__flexContainer {
-    display: flex;
-    justify-content: center;
+.about__headers {
     background-color: $color-orange;
-    border: 2px solid $color-brown;
+    padding: 3px 0px;
+    font-size: 2rem;
+    color: $color-brown;
+    border:2px solid $color-brown;
     border-radius: 5px;
     width: 100%;
-    max-width: 750px;
-    margin: auto;
-    padding: 10px;
+    max-width: 175px;
+    margin-bottom: 10px;
 }
 
 .about__gridContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr); 
+    background-color: $color-orange;
+    border: 2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 750px;
+    padding: 5px;
+    padding-left: 8px;
 }
 
 .about__text {
     text-align: start;
     width: 100%;
     max-width: 700px;
-    font-size: 1.5rem; 
+    font-size: 1.25rem; 
 }
 
-@media (max-width: 3840px) {
-    .about__flexContainer {
-        max-width: 1500px;
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+    .about__headers {
+        max-height: 50px;
     }
-    .about__text {
-        width: 100%;
-        max-width: 1400px;
-        font-size: 2.25rem;  
-    }
-}
 
-@media (max-width: 2560px) {
-    .about__flexContainer {
-        max-width: 1200px;
-        margin-top: 40px;
-    }
-    .about__text {
-        width: 100%;
-        max-width: 1400px;
-        font-size: 1.5rem;  
-    }
-}
-
-@media (max-width: 375px) {
-    .about__flexContainer {
-        max-width: 350px;
-    }
-    .about__text {
-        max-width: 340px;
+    .about__gridContainer {
+        margin-top: -20px;
     }
 }
