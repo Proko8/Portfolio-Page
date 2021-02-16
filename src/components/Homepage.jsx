@@ -5,14 +5,12 @@ import '../styles/_homepage.scss';
 function Homepage() {
     return (
         <div className="homepage">
-            <div className="headers">Home</div>
-            <div className="homepage__flexContainer">
-                <div className="homepage__gridContainer">
-                    <p>Hello, my name is Paul, and I want to make things that can make a difference for everyone.</p>
-                    {/* <img src="https://i.imgur.com/OSfwak9.jpg" alt="My nephew and I"className="homepage__picture"></img> */}
-                    <D3 />
-                </div>
-            </div>
+            <div className="homepage__headers homepage__grid-item-1">Home</div>
+                    <p className="homepage__text homepage__grid-item-2">Hello, my name is Paul, and I want to make things that can make a difference for everyone.</p> 
+                    <img src="https://i.imgur.com/OSfwak9.jpg" alt="My nephew and I" className="homepage__picture homepage__grid-item-3"></img>
+                    {/* <div className="homepage__grid-item-4">
+                        <D3/>
+                    </div> */}
         </div>
     );
 };

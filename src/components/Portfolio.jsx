@@ -4,40 +4,34 @@ import '../styles/_portfolio.scss'
 function Portfolio() {
   return (
     <div className="portfolio">
-        <div className="headers">Portfolio</div>
-        <div className="portfolio__flexContainer">
-            <div className="portfolio__gridContainer">
-                <div className="portfolio__application">
-                    <p className="portfolio__name"
+        <div className="portfolio__headers portfolio__grid-item-1">Portfolio</div>
+                    <a 
+                    href="https://clone-e0cbf.web.app"
+                    className="portfolio__amazon portfolio__grid-item-2"
                     >
                     Popular E-Commerce Application
-                    </p>
+                    </a>
                     <img
                     src="https://i.imgur.com/Jp5edpX.png"
                     alt=""
-                    className="portfolio__amazon"
+                    className="portfolio__amazon__picture portfolio__grid-item-3"
                     ></img>
                     <img
                     src="https://i.imgur.com/9hapZw1.png"
                     alt=""
-                    className="portfolio__amazon"
+                    className="portfolio__amazon__picture portfolio__grid-item-4"
                     ></img>
-                </div>
-                <div className="portfolio__application">
-                    <p className="portfolio__name">Popular Social Media Application</p>
+                    <p className="portfolio__facebook portfolio__grid-item-5">Popular Social Media Application</p>
                     <img
                     src="https://i.imgur.com/vf5UfLT.png"
                     alt=""
-                    className="portfolio__facebook"
+                    className="portfolio__facebook__picture portfolio__grid-item-6"
                     ></img>
                     <img
                     src="https://i.imgur.com/0uewwqm.png"
                     alt=""
-                    className="portfolio__facebook"
+                    className="portfolio__facebook__picture portfolio__grid-item-7"
                     ></img>
-                </div>
-            </div>
-        </div>
     </div>
   );
 };

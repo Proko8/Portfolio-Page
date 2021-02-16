@@ -4,7 +4,7 @@ import "../styles/_about.scss";
 function About() {
   return (
     <div className="about">
-      <div className="headers">About</div>
+      <div className="about__headers">About</div>
       <div className="about__flexContainer">
         <div className="about__gridContainer">
           <p className="about__text">Hello and welcome to my portfolio. My name is Paul Prokopy, and I am a Full Stack Software Engineer, specializing in web development. Here is a little information about me, where I came from, and who I am.</p>

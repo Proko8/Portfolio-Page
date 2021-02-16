@@ -1,55 +1,51 @@
 @import './variables.scss';
 
-.headers {
-    text-align: center;
-    background-color: $color-orange;
-    margin: auto;
-    margin-top: -30px;
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size: 2rem;
-    color: $color-brown;
-    border:2px solid $color-brown;
-    border-radius: 5px;
-    width: 100%;
-    max-width: 200px;
-}
+// .headers {
+//     text-align: center;
+//     background-color: $color-orange;
+//     margin: auto;
+//     padding: 5px;
+//     font-size: 2rem;
+//     color: $color-brown;
+//     border:2px solid $color-brown;
+//     border-radius: 5px;
+// }
 
-@media (max-width: 3840px) {
-    .headers { 
-        margin-top: 60px;
-        margin-bottom: 60px;
-        padding: 30px;
-        font-size: 5rem;
-        max-width: 350px;
-    }
-}
+// @media (max-width: 3840px) {
+//     .headers { 
+//         margin-top: 60px;
+//         margin-bottom: 60px;
+//         padding: 30px;
+//         font-size: 5rem;
+//         max-width: 350px;
+//     }
+// }
 
-@media (max-width: 2560px) {
-    .headers { 
-        margin-top: -40px;
-        margin-bottom: -10px;
-        padding: 5px;
-        font-size: 2.5rem;
-        max-width: 175px;
-    }
-}
+// @media (max-width: 2560px) {
+//     .headers { 
+//         margin-top: -40px;
+//         margin-bottom: -10px;
+//         padding: 5px;
+//         font-size: 2.5rem;
+//         max-width: 175px;
+//     }
+// }
 
-@media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4){
-    .headers {
-        font-size: 1.5rem;
-        margin-top: -30px;
-        margin-bottom: 5px;
-        padding: 5px;
-        max-width: 100px;
-    }
-}
-@media only screen and (min-device-height: 760px) and (min-device-width: 360px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4){
-    .headers {
-        font-size: 1.5rem;
-        margin-top: -30px;
-        margin-bottom: 5px;
-        padding: 5px;
-        max-width: 100px;
-    }
-}
+// @media only screen and (min-device-height: 360px) and (min-device-width: 760px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 4){
+//     .headers {
+//         font-size: 1.5rem;
+//         margin-top: -30px;
+//         margin-bottom: 5px;
+//         padding: 5px;
+//         max-width: 100px;
+//     }
+// }
+// @media only screen and (min-device-height: 760px) and (min-device-width: 360px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 4){
+//     .headers {
+//         font-size: 1.5rem;
+//         margin-top: -30px;
+//         margin-bottom: 5px;
+//         padding: 5px;
+//         max-width: 100px;
+//     }
+// }
