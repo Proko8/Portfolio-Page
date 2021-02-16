@@ -13,23 +13,23 @@ function Portfolio() {
                     </a>
                     <img
                     src="https://i.imgur.com/Jp5edpX.png"
-                    alt=""
+                    alt="Personal project to recreate the popular e commerce website Amazon"
                     className="portfolio__amazon__picture portfolio__grid-item-3"
                     ></img>
                     <img
                     src="https://i.imgur.com/9hapZw1.png"
-                    alt=""
+                    alt="Personal project to recreate the popular e commerce website Amazon"
                     className="portfolio__amazon__picture portfolio__grid-item-4"
                     ></img>
                     <p className="portfolio__facebook portfolio__grid-item-5">Popular Social Media Application</p>
                     <img
                     src="https://i.imgur.com/vf5UfLT.png"
-                    alt=""
+                    alt="Personal project to recreate the popular social media website Facebook"
                     className="portfolio__facebook__picture portfolio__grid-item-6"
                     ></img>
                     <img
                     src="https://i.imgur.com/0uewwqm.png"
-                    alt=""
+                    alt="Personal project to recreate the popular social media website Facebook"
                     className="portfolio__facebook__picture portfolio__grid-item-7"
                     ></img>
     </div>
