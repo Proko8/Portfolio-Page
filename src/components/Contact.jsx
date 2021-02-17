@@ -14,6 +14,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/paul-prokopy"
             className="contact__links"
+            target="_blank"
             aria-label="Paul's LinkedIn Profile"
           >
             LinkedIn - https://www.linkedin.com/in/paul-prokopy
@@ -24,6 +25,7 @@ function Contact() {
           <a
             href="https://www.github.com/proko8"
             className="contact__links"
+            target="_blank"
             aria-label="Paul's Github Profile"
           >
             Github - https://www.github.com/proko8
@@ -34,6 +36,7 @@ function Contact() {
           <a
             href="mailto:pprokopy@gmail.com"
             className="contact__links"
+            target="_blank"
             aria-label="Email Paul"
           >
             Email - Pprokopy@gmail.com
