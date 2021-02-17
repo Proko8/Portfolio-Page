@@ -50,17 +50,20 @@
 .homepage__picture {
     width: 100%;
     max-width: 375px;
-    margin-top: -70px;
+    margin-top: 30px;
 }
 
 .homepage__text {
     font-size: 1.5rem;
+    text-decoration: none;
     text-align: center;
     color: $color-brown;
     background-color: $color-orange;
     border:2px solid $color-brown;
     border-radius: 5px;
     padding: 3px;
+    position: relative;
+    bottom: -10px;
 }
 
 @media (min-width: 2560px) and (max-width: 3840px)  {
@@ -78,7 +81,7 @@
         width: 100%;
         max-width: 775px;
         position: relative;
-        bottom: -100px;
+        bottom: -50px;
     }
 }
 

@@ -8,6 +8,8 @@ function Portfolio() {
                     <a 
                     href="https://clone-e0cbf.web.app"
                     className="portfolio__amazon portfolio__grid-item-2"
+                    target="_blank"
+                    aria-label="navigates to my deployed Amazon clone"
                     >
                     Popular E-Commerce Application
                     </a>
