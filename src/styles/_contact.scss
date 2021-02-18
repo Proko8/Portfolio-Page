@@ -2,7 +2,7 @@
 
 .contact {
     display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 4fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     justify-items: center;
 }
@@ -33,7 +33,14 @@
     grid-row-end: 2;
 }
 
-.contact__container{
+.contact__grid-item-3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.contact__container {
     display: grid;
     align-items: center;
     background-color: $color-orange;
@@ -50,11 +57,47 @@
      bottom: -5px;
 }
 
-.contact__links{
+.contact__links {
     text-decoration: none;
     color: $color-brown;
     margin-left: 5px;
     position: relative;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.contact__form__container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-orange;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    bottom: -10px;
+}
+
+.contact__form__control {
+    background-color: $color-orange;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    color: $color-brown;
+}
+
+.contact__submitButton {
+    width: 75px;
+    background-color: $color-brown;
+    color: $color-orange;
+    border:2px solid $color-brown;
+    border-radius: 5px;
+}
+
+.contact__text {
+    width: 400px;
+    border:2px solid $color-brown;
+    border-radius: 5px;
 }

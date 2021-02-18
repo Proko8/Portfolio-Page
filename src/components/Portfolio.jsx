@@ -9,6 +9,7 @@ function Portfolio() {
                     href="https://clone-e0cbf.web.app"
                     className="portfolio__amazon portfolio__grid-item-2"
                     target="_blank"
+                    rel="noreferrer"
                     aria-label="navigates to my deployed Amazon clone"
                     >
                     Popular E-Commerce Application
