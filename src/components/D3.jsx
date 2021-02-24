@@ -14,9 +14,9 @@ console.log(data)
         newData[index] = newData[index] + 1
         setData(newData)
     }
-
+    
     useEffect(() => {
-        const svg = select(svgRef.current).attr("width", "500").attr("height", "200");
+        const svg = select(svgRef.current).attr("width", "500").attr("height", "200"); //creates svg for the graph
         const xScale = scaleBand()
         .domain(languages.map((value, index) => languages[index]))
         .range([0, 475])  
