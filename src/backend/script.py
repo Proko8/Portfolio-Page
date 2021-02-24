@@ -16,14 +16,10 @@ def run_script():
 
         conn = psycopg2.connect(dbname=environ.get('DB_NAME'), user=environ.get('DB_USERNAME'), password=environ.get('DB_PASSWORD'), host=environ.get('HOST'), port='5432', sslmode='require')
         cur = conn.cursor()
-
-        def send_info():
-            INSERT INTO recruiter_info
-
-        cur.execute(send_info, (data.firstName, data.lastName, data.company, data.email))
-        # cur.insert_data(data)
-        # cur.commit() 
-
+        postgres_insert_query = """ INSERT INTO recruiter_info (firstname, lastname, company, email) VALUES (%s,%s,%s,%s)"""
+        record_to_insert = (data['firstName'], data['lastName'], data['company'], data['email'])
+        cur.execute(postgres_insert_query, record_to_insert)
+        conn.commit()
         # query = '''
         # SELECT
         #     id,

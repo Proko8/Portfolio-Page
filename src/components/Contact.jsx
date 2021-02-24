@@ -16,7 +16,8 @@ function Contact() {
   //   }
   // }, [input])
 
-  const sendInfo = () => {
+  const sendInfo = (event) => {
+    event.preventDefault()
     if (
       firstName.length > 0 &&
       lastName.length > 0 &&
@@ -43,9 +44,12 @@ function Contact() {
     }
   };
   
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleSubmit = () => {
+    preventDefault();
     sendInfo();
+    alert(
+      "Your information has been submitted. Thank you very much, and have a great day!"
+    );
   };
 
   return (
@@ -148,12 +152,9 @@ function Contact() {
         <div>
           <button
             className="contact__submitButton"
+            type="button"
             onClick={
-              (() => handleSubmit(),
-              () =>
-                alert(
-                  "Your information has been submitted. Thank you very much, and have a great day!"
-                ))
+              () => handleSubmit
             }
           >
             Submit
